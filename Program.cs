@@ -1,24 +1,30 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        
-        int studentAge; 
-        studentAge = 20; 
+        string str1 = "abc";
+        string str2 = "xyzllkj";
+        string result = "";
 
         
+        for (int i = 0; i < ( str2.Length); i++)
+        {
 
-        string studentName = "John Doe";
-        double CGPA = 3.1;
-        
+            if (i < str1.Length)
+            {
+                result += str1[i];
+            }
+
+            
+            if (i < str2.Length)
+            {
+                result += str2[i];
+            }
+        }
 
         
-        Console.WriteLine("Student Name: " + studentName);
-        Console.WriteLine("Student Age: " + studentAge);
-        Console.WriteLine("CGPA+ cgpa");
-       
+        Console.WriteLine(result); 
     }
 }
