@@ -1,30 +1,11 @@
-﻿using System;
-
-class Program
+﻿
+class program
 {
     static void Main(string[] args)
     {
-        string str1 = "abc";
-        string str2 = "xyzllkj";
-        string result = "";
+        int[] number = { 27, 60, 80, 90, 20, 66 };
+        int index = Array.IndexOf(number, 20);
 
-        
-        for (int i = 0; i < ( str2.Length); i++)
-        {
-
-            if (i < str1.Length)
-            {
-                result += str1[i];
-            }
-
-            
-            if (i < str2.Length)
-            {
-                result += str2[i];
-            }
-        }
-
-        
-        Console.WriteLine(result); 
+        Console.WriteLine("The index of 20 is: " + index);
     }
 }
